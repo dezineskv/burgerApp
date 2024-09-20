@@ -6,6 +6,6 @@ export default defineConfig({
   base: "/repo",
   plugins: [react()],
   server: {
-    host: true,
+    host: true
   }
 })
