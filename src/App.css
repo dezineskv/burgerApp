@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.container {
+  padding: 2em;
+  color: black;
+  width: 30%;
+  border: 1px solid black;
+  box-shadow: 4px 4px 10px 0 rgba(22, 25, 28, .07);
+  border-radius: 10px;
+  text-align: center;
+  margin: 10% auto;
+}
+.burger {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.burger:hover {
+  filter: drop-shadow(0 0 2em #32190caa);
+}
+.burger.react:hover {
+  filter: drop-shadow(0 0 2em #32190caa);
+}
+
+@keyframes burger-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .burger {
+    animation: burger-spin infinite 20s linear;
+  }
+}
+.card-holder {
+  padding: 2em;
+  color: black;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.card {
+  padding: 2em;
+  color: black;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+
+.card:hover {
+  padding: 2em;
+  background-color: rgb(90, 67, 36);
+  color: white;
+  margin: 20px auto;
+}
+
+.card-detail {
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.card-d {
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.read-the-docs {
+  color: #888;
+}
